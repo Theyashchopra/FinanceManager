@@ -40,4 +40,9 @@
         android:name="com.example.andriod.financemanager.ui.send.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/nav_AddExp"
+        android:name="com.example.andriod.financemanager.ui.gallery.GalleryFragment"
+        android:label="@string/Adex"
+        tools:layout="@layout/fragment_gallery" />
 </navigation>
