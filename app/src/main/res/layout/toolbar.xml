@@ -13,12 +13,19 @@
         android:layout_height="fill_parent"
         android:orientation="horizontal"
         android:paddingTop="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_nav"
+            android:paddingRight="18dp"
+            />
         <TextView
             android:id="@+id/txtTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Adex"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="24sp"/>
     </LinearLayout>
 </Toolbar>

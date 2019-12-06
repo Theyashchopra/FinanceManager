@@ -9,16 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddExpense"></activity>
-        <activity
-            android:name=".balance"
-            android:label="@string/title_activity_balance"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".add_exp"></activity>
         <activity
             android:name=".sandwitch"
             android:label="@string/title_activity_sandwitch"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

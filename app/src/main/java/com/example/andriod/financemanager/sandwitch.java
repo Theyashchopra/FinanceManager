@@ -3,6 +3,7 @@ package com.example.andriod.financemanager;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.andriod.financemanager.ui.Add_Expense.AddExpenseFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -35,7 +36,7 @@ public class sandwitch extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                startActivity(new Intent(view.getContext(), AddExpense.class));
+                startActivity(new Intent(view.getContext(), add_exp.class));
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -44,7 +45,7 @@ public class sandwitch extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send)
+                R.id.nav_tools, R.id.nav_share, R.id.nav_send,R.id.nav_addexp)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
