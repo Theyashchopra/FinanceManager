@@ -1,22 +1,14 @@
 package com.example.andriod.financemanager;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    Variable_app va1=new Variable_app();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +26,11 @@ public class MainActivity extends AppCompatActivity {
         l3.setVisibility(View.GONE);
         LinearLayout l4=findViewById(R.id.linear3);
         l4.setVisibility(View.VISIBLE);
+        TextView t_in=findViewById(R.id.edit_income);
+        if (t_in.getText().toString().length() != 0) {
+            va1.setTotal_money(Float.parseFloat(t_in.getText().toString().trim()));
+        }
     }
-
     public void nextactivity(View view) {
         Intent i1 =new Intent(this,sandwitch.class);
         startActivity(i1);

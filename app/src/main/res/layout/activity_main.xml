@@ -44,9 +44,10 @@
             style="@style/LoginStyle"
             />
         <EditText
+            android:id="@+id/edit_income"
             android:hint="Income here in rupees"
             android:autofillHints="Your income"
-            android:inputType="numberDecimal"
+            android:inputType="number"
             style="@style/LoginStyle"/>
 
         <Button

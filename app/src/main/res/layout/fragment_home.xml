@@ -9,13 +9,12 @@
         android:id="@+id/text_home"
         style="@style/LoginStyle"
         android:layout_gravity="center"
-        android:text="Money Left"
+        android:text="Money Spent"
         />
     <TextView
         android:id="@+id/Remainingmoney"
         style="@style/LoginStyle"
         android:textSize="30dp"
-        android:textStyle="bold"
-        android:text="800000"/>
+        android:textStyle="bold"/>
 
 </LinearLayout>
