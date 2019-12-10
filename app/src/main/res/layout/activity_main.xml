@@ -19,6 +19,7 @@
         style="@style/LoginStyle"
         />
     <EditText
+        android:id="@+id/edit1"
         android:hint="Name here"
         android:inputType="text"
         android:autofillHints="your name"
@@ -70,8 +71,9 @@
                 style="@style/LoginStyle"
                 />
             <EditText
-                android:hint="Income here in rupees"
-                android:autofillHints="Your income"
+                android:id="@+id/edit3"
+                android:hint="Enter a Date"
+                android:autofillHints="date"
                 android:inputType="numberDecimal"
                 style="@style/LoginStyle"/>
             <Button

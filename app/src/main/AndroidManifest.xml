@@ -11,11 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".add_exp"></activity>
+        <activity android:name=".MainActivity"></activity>
         <activity
             android:name=".sandwitch"
             android:label="@string/title_activity_sandwitch"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

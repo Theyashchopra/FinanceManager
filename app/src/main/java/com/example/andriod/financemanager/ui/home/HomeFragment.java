@@ -5,9 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -19,7 +16,7 @@ public class HomeFragment extends Fragment {
     Variable_app va3=new Variable_app();
     private HomeViewModel homeViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
+    public View onCreateView( LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
@@ -27,14 +24,14 @@ public class HomeFragment extends Fragment {
         final TextView textView = root.findViewById(R.id.text_home);
         homeViewModel.getText().observe(this, new Observer<String>() {
             @Override
-            public void onChanged(@Nullable String s) {
+            public void onChanged( String s) {
                 textView.setText(s);
             }
         });
         final TextView tv2=root.findViewById(R.id.Remainingmoney);
         homeViewModel.getText1().observe(this, new Observer<String>() {
             @Override
-            public void onChanged(@Nullable String s) {
+            public void onChanged( String s) {
                 tv2.setText(s);
             }
         });
