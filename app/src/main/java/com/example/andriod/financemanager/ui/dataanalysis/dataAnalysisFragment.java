@@ -1,4 +1,4 @@
-package com.example.andriod.financemanager.ui.send;
+package com.example.andriod.financemanager.ui.dataanalysis;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.andriod.financemanager.R;
 
-public class SendFragment extends Fragment {
+public class dataAnalysisFragment extends Fragment {
 
-    private SendViewModel sendViewModel;
+    private DataAnalysisViewModel dataAnalysisViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_send, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        dataAnalysisViewModel =
+                ViewModelProviders.of(this).get(DataAnalysisViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_data_analysis, container, false);
+        final TextView textView = root.findViewById(R.id.text_gallery);
+        dataAnalysisViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

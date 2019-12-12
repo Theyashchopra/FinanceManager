@@ -12,34 +12,23 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.andriod.financemanager.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_data_analysis"
+        android:name="com.example.andriod.financemanager.ui.dataanalysis.dataAnalysisFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.andriod.financemanager.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.andriod.financemanager.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/fragment_data_analysis" />
 
     <fragment
         android:id="@+id/nav_share"
         android:name="com.example.andriod.financemanager.ui.share.ShareFragment"
-        android:label="@string/menu_share"
+        android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_share" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.andriod.financemanager.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_about"
+        android:name="com.example.andriod.financemanager.ui.about.aboutFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_about" />
+
     <fragment
         android:id="@+id/nav_addexp"
         android:name="com.example.andriod.financemanager.ui.Add_Expense.AddExpenseFragment"

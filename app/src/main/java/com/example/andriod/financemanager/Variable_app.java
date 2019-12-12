@@ -3,7 +3,7 @@ package com.example.andriod.financemanager;
 import android.app.Application;
 
 public class Variable_app extends Application {
-    private float total_money=1000;
+    private float total_money=0;
     private float money_spent=0;
     public float getMoney_spent() {
         return money_spent;
