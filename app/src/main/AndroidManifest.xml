@@ -10,8 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".add_exp"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Share_retrieve_data"></activity>
+        <activity
+            android:name=".add_exp"
+            android:parentActivityName=".sandwitch" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".sandwitch"
             android:label="@string/title_activity_sandwitch"
@@ -23,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".nav_head_changer" />
     </application>
 
 </manifest>

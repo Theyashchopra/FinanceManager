@@ -32,6 +32,45 @@
         android:layout_width="wrap_content"/>
 </LinearLayout>
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:id="@+id/gender"
+        >
+        <TextView
+            android:text="What is your gender?"
+            style="@style/LoginStyle"
+            />
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:id="@+id/radioGroup"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="Male"
+                android:id="@+id/radiomale"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="25sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="Female"
+                android:id="@+id/radiofemale"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="25sp"/>
+        </RadioGroup>
+        <Button
+            android:text="Next"
+            android:onClick="change1"
+            style="@style/LoginStyle"
+            android:layout_width="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_gravity="center"
         tools:context=".MainActivity"
         android:id="@+id/linear2"
@@ -53,11 +92,11 @@
 
         <Button
             android:text="Next"
-            android:onClick="change1"
+            android:onClick="change2"
             style="@style/LoginStyle"
             android:layout_width="wrap_content"/>
     </LinearLayout>
-        <LinearLayout
+    <LinearLayout
             android:layout_gravity="center"
             tools:context=".MainActivity"
             android:id="@+id/linear3"

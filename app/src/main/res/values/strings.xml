@@ -16,4 +16,8 @@
     <string name="menu_send">Send</string>
     <string name="title_activity_balance">balance</string>
     <string name="Adex">Add Expense</string>
+    <string name="dash">-</string>
+    <string name="space" />
+    <string name="load">Load</string>
+    <string name="save">Save</string>
 </resources>
